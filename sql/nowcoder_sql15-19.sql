@@ -16,7 +16,7 @@ FROM titles
 JOIN salaries s
 ON titles.emp_no = s.emp_no
 WHERE titles.to_date = '9999-01-01'
-  AND s.to_date      = '9999-01-01'
+  AND      s.to_date = '9999-01-01'
 GROUP BY titles.title
 ORDER BY 2;
 
