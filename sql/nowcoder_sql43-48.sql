@@ -22,7 +22,7 @@ ALTER TABLE audit
 ADD FOREIGN KEY (EMP_no)
 REFERENCES employees_test(id);
 
---SQL48 将所有获取奖金的员工当前的薪水增加10%
+-- SQL48 将所有获取奖金的员工当前的薪水增加10%
 UPDATE salaries
 SET salaries.salary = salaries.salary * 1.1
 WHERE salaries.to_date = '9999-01-01'
