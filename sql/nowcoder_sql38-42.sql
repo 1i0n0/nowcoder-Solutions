@@ -24,7 +24,7 @@ CREATE TRIGGER audit_log
 AFTER INSERT ON employees_test 
 FOR EACH ROW INSERT INTO audit VALUES(NEW.id, NEW.name);
 
---SQL42 删除emp_no重复的记录，只保留最小的id对应的记录
+-- SQL42 删除emp_no重复的记录，只保留最小的id对应的记录
 DELETE FROM titles_test
 WHERE id NOT IN (SELECT * 
                  FROM (SELECT MIN(id) 
