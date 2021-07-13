@@ -20,7 +20,7 @@ SELECT dept_no, GROUP_CONCAT(emp_no) AS employees
 FROM dept_emp
 GROUP BY dept_no;
 
---SQL54 查找排除最大、最小salary之后的当前(to_date = '9999-01-01' )员工的平均工资avg_salary
+-- SQL54 查找排除最大、最小salary之后的当前(to_date = '9999-01-01' )员工的平均工资avg_salary
 SELECT AVG(salary) AS avg_salary
 FROM salaries
 WHERE to_date = '9999-01-01'
