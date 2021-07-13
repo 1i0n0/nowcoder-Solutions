@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS actor_name AS
 SELECT first_name, last_name
 FROM actor;
 
---SQL37 对first_name创建唯一索引uniq_idx_firstname
+-- SQL37 对first_name创建唯一索引uniq_idx_firstname
 --      对last_name创建普通索引idx_lastname
 CREATE UNIQUE INDEX uniq_idx_firstname ON actor (first_name);
 CREATE INDEX idx_lastname ON actor (last_name);
