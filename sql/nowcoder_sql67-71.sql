@@ -10,8 +10,8 @@ FROM login l1
 JOIN user u ON l1.user_id = u.id
 JOIN client c ON l1.client_id = c.id
 WHERE l1.date = (SELECT MAX(date)
-                FROM login l2 
-                WHERE l1.user_id = l2.user_id)
+                 FROM login l2 
+                 WHERE l1.user_id = l2.user_id)
 ORDER BY u.name;
 
 -- SQL68 牛客每个人最近的登录日期(三) (新登录用户的次日成功的留存率)
