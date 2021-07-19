@@ -41,7 +41,7 @@ GROUP BY job
 ORDER BY job;
 
 -- SQL76 考试分数(五)
-/* reference: https://zhuanlan.zhihu.com/p/162089174 */
+/* 思路借鉴于 https://zhuanlan.zhihu.com/p/162089174 */
 SELECT id,
        job,
        score,
