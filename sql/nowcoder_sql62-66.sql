@@ -35,7 +35,7 @@ ORDER BY p.id;
 
 -- SQL65 异常的邮件概率
 SELECT e.date,
-       FORMAT(SUM(CASE WHEN e.type = 'completed' THEN 0
+       ROUND(SUM(CASE WHEN e.type = 'completed' THEN 0
                        ELSE 1
                   END) / COUNT(e.date), 3) AS p
 FROM email e
